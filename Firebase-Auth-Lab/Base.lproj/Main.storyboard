@@ -28,7 +28,7 @@
                                         <rect key="frame" x="0.0" y="82" width="374" height="34"/>
                                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5b-x8-z7r">
                                         <rect key="frame" x="0.0" y="164" width="374" height="60"/>
@@ -44,8 +44,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5R-27-Q4e">
-                                <rect key="frame" x="168" y="103" width="78" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5R-27-Q4e">
+                                <rect key="frame" x="168" y="88" width="78" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ip3-RF-xuR"/>
                                 </constraints>
@@ -85,7 +85,7 @@
                             <constraint firstItem="7ll-6y-9Zv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eCT-XJ-lis"/>
                             <constraint firstItem="83o-IM-XMG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="fcM-SL-hLZ"/>
                             <constraint firstItem="7ll-6y-9Zv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="fhM-FK-ZLM"/>
-                            <constraint firstItem="B5R-27-Q4e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="jze-e2-MxE"/>
+                            <constraint firstItem="B5R-27-Q4e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jze-e2-MxE"/>
                             <constraint firstItem="B5R-27-Q4e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k2e-bu-NAy"/>
                             <constraint firstItem="7ll-6y-9Zv" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="kqW-dX-cNZ"/>
                         </constraints>
