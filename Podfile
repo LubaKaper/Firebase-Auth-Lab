@@ -10,8 +10,9 @@ target 'Firebase-Auth-Lab' do
  #added this for this weel
  pod 'Firebase/Auth'
  
- #pod 'Firebase/Firestore'
- #pod 'Firebase/Storage'
+ pod 'Firebase/Firestore'
+ pod 'Firebase/Storage'
+pod 'Kingfisher'
 
   target 'Firebase-Auth-LabTests' do
     inherit! :search_paths

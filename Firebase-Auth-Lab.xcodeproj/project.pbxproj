@@ -16,6 +16,12 @@
 		8D657132240C771200CBDC04 /* Firebase_Auth_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D657131240C771200CBDC04 /* Firebase_Auth_LabTests.swift */; };
 		8D65713F240CA27B00CBDC04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D65713E240CA27B00CBDC04 /* GoogleService-Info.plist */; };
 		8D657142240CA4E200CBDC04 /* AuthenticatinSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D657141240CA4E200CBDC04 /* AuthenticatinSession.swift */; };
+		8D81BBFB241818C400FC1F2B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D81BBFA241818C400FC1F2B /* UIImage+Extension.swift */; };
+		8D81BBFD241818F900FC1F2B /* UiviewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D81BBFC241818F900FC1F2B /* UiviewController+Alerts.swift */; };
+		8D81BBFF24181A9600FC1F2B /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D81BBFE24181A9600FC1F2B /* UIViewController+Navigation.swift */; };
+		8DBECFA3241811A5000639C4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DBECFA2241811A5000639C4 /* Profile.storyboard */; };
+		8DBECFA5241811CF000639C4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBECFA4241811CF000639C4 /* ProfileViewController.swift */; };
+		8DBECFA724181487000639C4 /* StorasgeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBECFA624181487000639C4 /* StorasgeServices.swift */; };
 		B7EA3FE6ACE98AFCF64FDE72 /* Pods_Firebase_Auth_LabTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3128560D55CD3E32C179C6D /* Pods_Firebase_Auth_LabTests.framework */; };
 		F69870F5C35443229C517ED2 /* Pods_Firebase_Auth_Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D1B48BAFF6C330C555BCC8 /* Pods_Firebase_Auth_Lab.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +53,12 @@
 		8D657133240C771200CBDC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D65713E240CA27B00CBDC04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D657141240CA4E200CBDC04 /* AuthenticatinSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatinSession.swift; sourceTree = "<group>"; };
+		8D81BBFA241818C400FC1F2B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		8D81BBFC241818F900FC1F2B /* UiviewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiviewController+Alerts.swift"; sourceTree = "<group>"; };
+		8D81BBFE24181A9600FC1F2B /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		8DBECFA2241811A5000639C4 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		8DBECFA4241811CF000639C4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8DBECFA624181487000639C4 /* StorasgeServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorasgeServices.swift; sourceTree = "<group>"; };
 		A3128560D55CD3E32C179C6D /* Pods_Firebase_Auth_LabTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Auth_LabTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D65A7FDD7A27BE26680030 /* Pods-Firebase-Auth-Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Auth-Lab.debug.xcconfig"; path = "Target Support Files/Pods-Firebase-Auth-Lab/Pods-Firebase-Auth-Lab.debug.xcconfig"; sourceTree = "<group>"; };
 		D4B4B75E0EBC96EBF01A46EB /* Pods-Firebase-Auth-LabTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Auth-LabTests.release.xcconfig"; path = "Target Support Files/Pods-Firebase-Auth-LabTests/Pods-Firebase-Auth-LabTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,11 +107,14 @@
 		8D657119240C770E00CBDC04 /* Firebase-Auth-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				8D81BBF9241818A700FC1F2B /* Extensions */,
 				8D657140240CA4AB00CBDC04 /* FirebaseServices */,
 				8D65711A240C770E00CBDC04 /* AppDelegate.swift */,
 				8D65711C240C770E00CBDC04 /* SceneDelegate.swift */,
 				8D65711E240C770E00CBDC04 /* LoginViewController.swift */,
+				8DBECFA4241811CF000639C4 /* ProfileViewController.swift */,
 				8D657120240C770E00CBDC04 /* Main.storyboard */,
+				8DBECFA2241811A5000639C4 /* Profile.storyboard */,
 				8D657123240C771200CBDC04 /* Assets.xcassets */,
 				8D657125240C771200CBDC04 /* LaunchScreen.storyboard */,
 				8D657128240C771200CBDC04 /* Info.plist */,
@@ -121,8 +136,19 @@
 			isa = PBXGroup;
 			children = (
 				8D657141240CA4E200CBDC04 /* AuthenticatinSession.swift */,
+				8DBECFA624181487000639C4 /* StorasgeServices.swift */,
 			);
 			path = FirebaseServices;
+			sourceTree = "<group>";
+		};
+		8D81BBF9241818A700FC1F2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D81BBFA241818C400FC1F2B /* UIImage+Extension.swift */,
+				8D81BBFC241818F900FC1F2B /* UiviewController+Alerts.swift */,
+				8D81BBFE24181A9600FC1F2B /* UIViewController+Navigation.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C8A7772C0832187F8D6E1C2F /* Pods */ = {
@@ -231,6 +257,7 @@
 			files = (
 				8D657127240C771200CBDC04 /* LaunchScreen.storyboard in Resources */,
 				8D65713F240CA27B00CBDC04 /* GoogleService-Info.plist in Resources */,
+				8DBECFA3241811A5000639C4 /* Profile.storyboard in Resources */,
 				8D657124240C771200CBDC04 /* Assets.xcassets in Resources */,
 				8D657122240C770E00CBDC04 /* Main.storyboard in Resources */,
 			);
@@ -315,7 +342,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D65711F240C770E00CBDC04 /* LoginViewController.swift in Sources */,
+				8D81BBFD241818F900FC1F2B /* UiviewController+Alerts.swift in Sources */,
+				8DBECFA724181487000639C4 /* StorasgeServices.swift in Sources */,
 				8D65711B240C770E00CBDC04 /* AppDelegate.swift in Sources */,
+				8D81BBFB241818C400FC1F2B /* UIImage+Extension.swift in Sources */,
+				8DBECFA5241811CF000639C4 /* ProfileViewController.swift in Sources */,
+				8D81BBFF24181A9600FC1F2B /* UIViewController+Navigation.swift in Sources */,
 				8D657142240CA4E200CBDC04 /* AuthenticatinSession.swift in Sources */,
 				8D65711D240C770E00CBDC04 /* SceneDelegate.swift in Sources */,
 			);

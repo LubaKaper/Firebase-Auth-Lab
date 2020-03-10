@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 enum AccountState {
     case existingUser
@@ -65,9 +66,10 @@ class LoginViewController: UIViewController {
                         self?.errorLabel.text = "\(error.localizedDescription)"
                         self?.errorLabel.textColor = .systemRed
                     }
-                case .success(let authDataResult):
+                case .success://(let authDataResult):
+                    
                     DispatchQueue.main.async {
-                        self?.errorLabel.text = "Welcome back user with email: \(authDataResult.user.email ?? "")"
+                        self?.navigateToMainView()
                     }
                 }
             }
@@ -79,14 +81,19 @@ class LoginViewController: UIViewController {
                         self?.errorLabel.text = "\(error.localizedDescription)"
                         self?.errorLabel.textColor = .systemRed
                     }
-                case .success(let authDataResult):
+                case .success://(let authDataResult):
                     DispatchQueue.main.async {
-                        self?.errorLabel.text = "Hope ypu enjoy our app expirience. Email used: \(authDataResult.user.email ?? "")"
-                        self?.errorLabel.textColor = .systemGreen
+                        self?.navigateToMainView()
+//                        self?.errorLabel.text = "Hope ypu enjoy our app expirience. Email used: \(authDataResult.user.email ?? "")"
+//                        self?.errorLabel.textColor = .systemGreen
                     }
                 }
             }
         }
+    }
+    
+    private func navigateToMainView() {
+        UIViewController.showViewCintroller(storyboardName: "Profile", viewControllerID: "ProfileViewController")
     }
     
 
